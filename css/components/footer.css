@@ -1,0 +1,55 @@
+.footer {
+  background-color: #f2f2f2;
+  padding: 2px 0; /* Reduzi o padding para o mínimo possível (2px acima e abaixo) */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;  /* Reduzi a largura máxima do container para menos */
+  margin: 0 auto;
+  padding: 0 10px;  /* Reduzi o padding lateral do container */
+}
+
+.footer__info,
+.footer__contact {
+  width: auto; /* Não definir uma largura fixa para garantir que se ajustem ao conteúdo */
+}
+
+.footer__text {
+  margin: 0; /* Removi completamente a margem */
+  padding: 0; /* Removi o padding interno */
+  text-align: center;
+  font-size: 12px;
+}
+
+.footer__contact a {
+  text-decoration: none;
+  color: blue;
+}
+
+.footer__contact img {
+  width: 16px;  /* Reduzi o tamanho dos ícones para 16px */
+  height: 16px;
+  margin: 0 4px;  /* Coloquei um espaço bem pequeno entre os ícones */
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    padding: 0; /* Removi o padding lateral nas telas menores */
+  }
+
+  .footer__info,
+  .footer__contact {
+    width: 100%;
+  }
+}
+
+.footer__copyright {
+  text-align: center;
+  margin-top: 5px; /* Deixei uma margem bem pequena */
+  font-size: 10px; /* Font-size menor para o copyright */
+}

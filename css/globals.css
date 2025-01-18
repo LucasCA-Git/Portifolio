@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: var(--font-family);
+}
+body {
+  background-color: #383838; /* Cor de fundo cinza grafite escuro */
+  font-size: 1.6rem;
+  margin-top: 15rem;
+}
+
+.logo{
+  width: 210px; 
+  height: auto; 
+  }
+  .linha-divisoria {
+    border: 0;
+    height: 1px;
+    background-color: #ffffff; /* Cor da linha */
+}
+section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+html {
+  font-size: 62.5%;
+}
+.header__image img {
+  width: 400px; 
+  height: auto; 
+}
+
+body {
+  font-size: 1.6rem;
+  margin-top: 15rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 6.4rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.secondary-title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.tertiary-title {
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 4.5rem;
+  color: var(--secondary-color);
+}
+
+p,
+.p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 3.5rem;
+}
+
+p:not(:last-of-type),
+.p:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background-color: none;
+  border: none;
+  outline: none;
+  padding: 1rem 4rem;
+  display: inline-block;
+  border-radius: 0.5rem;
+}
+.image {
+  width: 100px;
+  height: auto;
+  transition: transform 0.3s ease; 
+}
+
+.image:hover {
+  transform: translateY(-25px); 
+}
+
+.btn.btn-primary {
+  background-color: var(--dark-secondary-color);
+  color: var(--white);
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+.btn.btn-secundary {
+  background-color: #F26400;
+  color: var(--white);
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+.btn.btn-wpp {
+  background-color: #25ab19;
+  color: var(--white);
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.max-width {
+  width: 100%;
+  max-width: 120rem;
+  padding: 0 4rem;
+  margin: 0 auto;
+  margin-bottom: 26rem;
+}
+/* Container das empresas */
+.empresas {
+  display: flex;
+  justify-content: center;  /* Alinha as empresas ao centro da tela */
+  align-items: center;  /* Alinha as empresas verticalmente */
+  flex-wrap: wrap;  /* Permite que as empresas quebrem para a próxima linha quando necessário */
+  gap: 2rem;  /* Espaçamento entre as empresas */
+  margin-top: 3rem;  /* Ajuste de espaçamento acima do container */
+  background-color: #ffffff;  /* Cor de fundo branco para a seção */
+  padding: 2rem;  /* Adiciona um pequeno espaçamento interno */
+  border-radius: 10px;  /* Bordas arredondadas para o fundo */
+}
+
+/* Cada empresa */
+.empresa {
+  width: 200px;  /* Largura fixa para cada empresa */
+  height: auto;  /* Garante que a altura seja proporcional à imagem */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Transição suave para hover e sombra */
+  border-radius: 10px;  /* Bordas arredondadas para o container da imagem */
+  overflow: hidden;  /* Garante que nada sai fora da borda arredondada */
+}
+
+/* Efeito hover para cada empresa */
+.empresa:hover {
+  transform: translateY(-10px);  /* Levanta a empresa ao passar o mouse */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);  /* Sombra sutil ao passar o mouse */
+}
+
+/* Estilo da imagem */
+.empresa img {
+  width: 100%;  /* A imagem ocupa toda a largura da empresa */
+  height: 100%;  /* Ajusta a altura da imagem */
+  object-fit: contain;  /* Mantém a proporção sem cortar a imagem */
+  border-radius: 10px;  /* Bordas arredondadas para as imagens */
+  transition: transform 0.3s ease;  /* Transição suave no hover da imagem */
+}
+
+/* Efeito hover na imagem */
+.empresa:hover img {
+  transform: scale(1.05);  /* Levemente aumenta a imagem ao passar o mouse */
+}
+
+/* Responsividade: Ajusta o layout para telas menores */
+@media only screen and (max-width: 1024px) {
+  .empresa {
+    width: 180px;  /* Largura um pouco menor para telas menores */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .empresa {
+    width: 160px;  /* Largura ainda menor para telas de tablets */
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .empresa {
+    width: 140px;  /* Largura menor para telas de celular */
+  }
+}
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-s {
+  margin-bottom: 1rem;
+}
+
+.mb-m {
+  margin-bottom: 2rem;
+}
+
+.mb-l {
+  margin-bottom: 4rem;
+}
+
+.mb-xl {
+  margin-bottom: 6rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 60%;
+  }
+
+  h1 {
+    font-size: 6rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 58%;
+  }
+
+  .max-width {
+    padding: 0 2rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  h1 {
+    font-size: 4.2rem;
+  }
+}

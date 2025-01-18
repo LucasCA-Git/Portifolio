@@ -1,0 +1,40 @@
+/* Estilo geral para os certificados */
+.certificados-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px; /* Espaçamento entre os certificados */
+    padding: 20px;
+}
+
+.certificado {
+    width: calc(25% - 15px); /* Ajuste para 4 certificados por linha */
+    box-sizing: border-box;
+}
+
+.certificado img {
+    width: 100%; /* A imagem ocupa toda a largura do container */
+    height: auto; /* Mantém a proporção da imagem */
+    max-width: 150px; /* Limita o tamanho máximo das imagens */
+    border-radius: 8px; /* Adiciona borda arredondada */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona transição suave */
+}
+
+.certificado img:hover {
+    transform: scale(1.05); /* Aumenta um pouco o tamanho ao passar o mouse */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .certificado {
+        width: calc(50% - 15px); /* Em telas menores, coloca 2 por linha */
+    }
+}
+
+@media (max-width: 480px) {
+    .certificado {
+        width: 100%; /* Em telas muito pequenas, coloca 1 por linha */
+    }
+}
