@@ -7,6 +7,12 @@ header {
   scroll-margin-top: 20rem;
 }
 
+.img-adicional{
+  border-radius: 15%; /* Torna a imagem arredondada */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra suave */
+  object-fit: cover; /* Garante que a imagem se encaixe no espaço */
+}
+
 header .header__left {
   max-width: 62rem;
   flex: 1;
